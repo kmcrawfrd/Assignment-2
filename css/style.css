@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #402c1f;
+    min-height: 100vh;
+    margin: 0;
+    background-color: burlywood;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+header {
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: burlywood;
+    background-color: #402c1f;
+}
+
+ul,
+nav {
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: burlywood;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+section {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.Section1 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Section2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    margin: 10px;
+}
+
+.painting {
+    margin: 10px;
+    padding: 10px;
+}
+
+.solopainting {
+    display: inline-block;
+    padding-right: 25px;
+    width: 100%;
+}
+
+img, figure, .solopainting {
+    text-align: center;
+    
+}
+
+img, figure, figcaption {
+    text-align: center;
+    
+}
+
+figcaption {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #402c1f;
+    color: burlywood;
+}
+
+footer {
+    background-color: #402c1f;
+    color: burlywood;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.history-paragraph {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.solo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
+caption {
+    font-size: 10px;
+}
+
+.source-link {
+    color: #402c1f;
+}
+
+@media screen and (max-width: 1000px) {
+    .solo-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .Section2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 10px;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+    .Section2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+
+    ul, nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0px;
+        padding: 10px;
+        list-style-type: none;
+    }
+
+}
